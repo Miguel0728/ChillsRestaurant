@@ -1,0 +1,61 @@
+﻿@using ChillsRestaurant.Controllers;
+@using ChillsRestaurant.Models.ViewModels
+
+@model IndexCarritoModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+        table, th, td {
+            border: 1px solid black;
+        }
+</style>
+    <meta charset="UTF-8">
+    <title>Órdenes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    <header>
+        <h1>Órdenes</h1>
+    </header>
+
+
+
+<h1>Lista de Productos</h1>
+
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Foto</th>
+    </tr>
+    @if(Model.MenuItems.Count == 0)
+    {
+        <p>No items</p>
+    }
+    else
+    {
+        @foreach (var menuItem in Model.MenuItems)
+        {
+            <tr>
+                <td>@menuItem.Name</td>
+                <td>@menuItem.Price.ToString("C")</td>
+                <td><img src="@menuItem.Photo" alt="@menuItem.Name" /></td>
+            </tr>
+        }
+    }
+
+    @* @foreach (var menuItem in Model.MenuItems)
+    {
+        <tr>
+            <td>@menuItem.Name</td>
+            <td>@menuItem.Price.ToString("C")</td>
+            <td><img src="@menuItem.Photo" alt="@menuItem.Name" /></td>
+        </tr>
+    } *@
+</table>
+   
+    <script src="script.js"></script>
+

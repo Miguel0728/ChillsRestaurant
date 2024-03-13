@@ -1,0 +1,65 @@
+﻿body {
+
+}
+
+.maincontainer {
+    /*position: relative;*/
+    margin-bottom: 100px;
+}
+
+/*--------------------------------------
+/*              Navbar
+--------------------------------------*/
+
+.navbar-brand {
+    color: #fff;
+    font-family: 'Roboto',Arial;
+    font-weight: 500;
+}
+
+.nav-link {
+    color: #fff;
+    font-family: 'Roboto',Arial;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #000;
+}
+
+/*--------------------------------------
+/*              Login View
+--------------------------------------*/
+.loginWelcomeTitleContainer {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#form-section {
+    /*box-shadow: #000 0px 10px 80px;*/
+    padding: 50px;
+}
+
+#form-title{
+    text-align: center;
+}
+
+/*-------------------------------------
+/*              SignUp View
+--------------------------------------*/
+
+.profile-img{
+    max-width: 100px;
+}
+
+/*--------------------------------------
+/*              Footer
+--------------------------------------*/
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
